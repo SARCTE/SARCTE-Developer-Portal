@@ -57,3 +57,10 @@ This repository contains only the public static website for the SARCTE Developer
 - Header rebuilt from clean datacenter background + HTML logo + HTML CTA.
 - Uniform rendering across desktop, tablet landscape/portrait and smartphone.
 - Existing Developer Portal content, theme switch and footer preserved.
+
+
+## v1.8 — Footer-style Header
+- Header now uses the approved footer artwork as its visual source.
+- HTML logo enlarged and kept crisp.
+- HTML CTA preserved.
+- Responsive behavior unified across desktop/tablet/mobile.
