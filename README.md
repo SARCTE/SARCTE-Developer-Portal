@@ -64,3 +64,14 @@ This repository contains only the public static website for the SARCTE Developer
 - HTML logo enlarged and kept crisp.
 - HTML CTA preserved.
 - Responsive behavior unified across desktop/tablet/mobile.
+
+
+## v1.9 — Final Header
+- Clean background derived from approved footer artwork.
+- HTML SARCTE mark + wordmark; no broken image and no ghost duplicate.
+- Same responsive header on desktop/tablet/mobile.
+
+
+## v2.0 — Header Logo Match
+- Header uses flat horizontal SARCTE artwork aligned to footer logo/wordmark.
+- Existing responsive behavior preserved.
