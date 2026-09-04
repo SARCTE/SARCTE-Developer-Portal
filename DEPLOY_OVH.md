@@ -1,34 +1,26 @@
-# Deploy OVH — github.sarcte.eu
+# Deploy SARCTE Developer Portal v1.1
 
-## Repository
+## Local repository
+`D:\SARCTE_GITHUB\SARCTE\01_REPOSITORIES\SARCTE-Developer-Portal`
+
+## GitHub
 `https://github.com/SARCTE/SARCTE-Developer-Portal.git`
 
-Branch: `main`
+## Production
+`https://github.sarcte.eu`
 
-## Local workflow
+## Update procedure
+Copy the contents of this package into the local repository root, replacing the previous portal files. Then run:
+
 ```powershell
-git clone https://github.com/SARCTE/SARCTE-Developer-Portal.git
-cd SARCTE-Developer-Portal
-```
-Copy the portal files into the cloned repository, then:
-```powershell
-git status
+cd D:\SARCTE_GITHUB\SARCTE\01_REPOSITORIES\SARCTE-Developer-Portal
+git status --short
 git add .
-git commit -m "feat: bootstrap SARCTE Developer Portal v1.0"
+git commit -m "style: align Developer Portal with SARCTE v3.9 branding"
 git push origin main
 ```
 
-## OVH configuration
-1. Backup the current contents of `/home/sarctef/github/`.
-2. Empty `/home/sarctef/github/` before associating Git.
-3. OVH Manager → Web Cloud → Hosting → Multisite.
-4. Select `github.sarcte.eu` → Associate Git.
-5. Repository: `https://github.com/SARCTE/SARCTE-Developer-Portal.git`
-6. Branch: `main`
-7. Apply configuration.
-8. Run the first Git deployment manually.
-9. Verify `https://github.sarcte.eu`.
-10. Configure the webhook only after the manual deployment is validated.
+## OVH Git
+Repository: `https://github.com/SARCTE/SARCTE-Developer-Portal.git`
 
-## Pre-push safety check
-Never publish passwords, tokens, API keys, private keys, customer data, backups, internal-only architecture documents or sensitive LAB configurations.
+Branch: `main`
