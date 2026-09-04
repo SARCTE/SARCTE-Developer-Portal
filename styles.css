@@ -138,3 +138,227 @@ html[data-theme="light"] .hero-mark img{
 @media(max-width:700px){
   .image-header-anchor img{object-position:center 55%}
 }
+
+
+/* v1.4 — smartphone/mobile refinement */
+@media (max-width: 700px){
+
+  html, body{
+    overflow-x:hidden;
+  }
+
+  /* Keep the approved SARCTE header readable on phones:
+     show the left brand and right CTA instead of center-only crop. */
+  .image-link-header{
+    height:112px !important;
+    max-height:112px !important;
+    overflow:hidden;
+  }
+  .image-header-anchor img{
+    width:100% !important;
+    height:112px !important;
+    object-fit:cover !important;
+    object-position:center center !important;
+  }
+
+  main{
+    width:100%;
+  }
+
+  .shell{
+    width:min(100% - 32px, 1180px) !important;
+    margin-inline:auto !important;
+  }
+
+  .theme-toolbar{
+    padding-top:12px !important;
+    padding-bottom:0 !important;
+  }
+
+  .hero{
+    padding:34px 0 38px !important;
+  }
+
+  .hero-grid{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:24px !important;
+  }
+
+  .hero-copy{
+    order:1;
+  }
+
+  .hero-mark{
+    order:2;
+    width:100% !important;
+    display:flex !important;
+    justify-content:center !important;
+  }
+
+  .hero-mark img{
+    width:min(58vw, 220px) !important;
+    height:auto !important;
+  }
+
+  .hero h1{
+    font-size:clamp(42px, 12vw, 58px) !important;
+    line-height:.96 !important;
+    letter-spacing:-.04em !important;
+    margin-bottom:20px !important;
+  }
+
+  .hero p{
+    font-size:17px !important;
+    line-height:1.6 !important;
+  }
+
+  .eyebrow{
+    font-size:12px !important;
+    letter-spacing:.14em !important;
+  }
+
+  .hero-actions{
+    display:grid !important;
+    grid-template-columns:1fr !important;
+    gap:10px !important;
+    margin-top:24px !important;
+  }
+  .hero-actions .button{
+    width:100% !important;
+    justify-content:center !important;
+    min-height:48px !important;
+  }
+
+  section{
+    padding:44px 0 !important;
+  }
+
+  .section-heading,
+  .section-intro,
+  .section-grid{
+    grid-template-columns:1fr !important;
+    gap:18px !important;
+  }
+
+  .section-heading h2,
+  .section-intro h2{
+    font-size:30px !important;
+    line-height:1.08 !important;
+  }
+
+  .pill-row{
+    gap:8px !important;
+  }
+  .pill{
+    padding:8px 11px !important;
+    font-size:12px !important;
+  }
+
+  .cards,
+  .repo-grid{
+    grid-template-columns:1fr !important;
+    gap:14px !important;
+  }
+
+  .card,
+  .repo-card{
+    min-height:auto !important;
+    padding:20px !important;
+  }
+
+  .repo-card a{
+    position:static !important;
+    display:inline-flex !important;
+    margin-top:14px !important;
+    padding-top:0 !important;
+  }
+
+  .action-list{
+    gap:10px !important;
+  }
+  .action-list a{
+    min-height:64px !important;
+    padding:15px 16px !important;
+  }
+
+  .roadmap-card{
+    display:block !important;
+    padding:22px !important;
+  }
+  .roadmap-card .status-badge,
+  .roadmap-card .link-badge{
+    display:inline-flex !important;
+    margin-top:16px !important;
+  }
+
+  /* Footer image remains the approved asset, but avoid an oversized mobile block. */
+  .image-link-footer{
+    margin-top:30px !important;
+  }
+  .footer-v38 .footer-interactive{
+    overflow:hidden !important;
+  }
+  .footer-v38 .footer-interactive > img{
+    width:100% !important;
+    height:auto !important;
+    min-height:0 !important;
+  }
+
+  /* On very narrow screens legal/data hotspots remain large enough to tap. */
+  .footer-v38 .footer-privacy-link{
+    left:21.0% !important;
+    top:78.5% !important;
+    width:8.5% !important;
+    height:13% !important;
+  }
+  .footer-v38 .footer-cookie-link{
+    left:29.5% !important;
+    top:78.5% !important;
+    width:8% !important;
+    height:13% !important;
+  }
+  .footer-v38 .footer-linkedin-link{
+    left:78% !important;
+    top:48% !important;
+    width:6% !important;
+    height:22% !important;
+  }
+  .footer-v38 .footer-corporate-link{
+    left:83.5% !important;
+    top:47% !important;
+    width:15.5% !important;
+    height:24% !important;
+  }
+}
+
+@media (max-width: 430px){
+  .shell{
+    width:calc(100% - 24px) !important;
+  }
+
+  .image-link-header{
+    height:96px !important;
+    max-height:96px !important;
+  }
+  .image-header-anchor img{
+    height:96px !important;
+  }
+
+  .hero{
+    padding-top:26px !important;
+  }
+
+  .hero h1{
+    font-size:clamp(38px, 12.5vw, 50px) !important;
+  }
+
+  .hero-mark img{
+    width:min(54vw, 190px) !important;
+  }
+
+  .theme-toggle{
+    min-width:40px !important;
+    min-height:40px !important;
+  }
+}

@@ -32,3 +32,11 @@ This repository contains only the public static website for the SARCTE Developer
 ## v1.3
 - Logo SARCTE nell'header alzato leggermente tramite rifinitura del crop verticale.
 - Nessuna modifica a footer, contenuti, tema dark/light o layout del portale.
+
+
+## v1.4 Mobile
+- Ottimizzazione smartphone completa.
+- Header più compatto e leggibile su schermi stretti.
+- Hero, cards, repository e CTA in singola colonna.
+- Tipografia e spaziature ridimensionate per mobile.
+- Footer e hotspot adattati per il touch.
