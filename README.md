@@ -1,4 +1,4 @@
-# SARCTE Developer Portal
+## SARCTE Developer Portal
 
 Public developer portal for the SARCTE ecosystem — projects, repositories, releases and technical resources.
 
@@ -46,3 +46,8 @@ This repository contains only the public static website for the SARCTE Developer
 - Su smartphone il banner non viene più ritagliato.
 - Logo SARCTE e pulsante `Visita sarcte.it` restano interamente visibili.
 - Il banner mantiene automaticamente le proporzioni originali.
+
+
+## v1.6 Portrait Fix
+- Dedicated header composition for portrait tablet and smartphone.
+- Desktop/landscape unchanged.
