@@ -1,4 +1,4 @@
-## SARCTE Developer Portal
+# SARCTE Developer Portal
 
 Public developer portal for the SARCTE ecosystem — projects, repositories, releases and technical resources.
 
@@ -53,4 +53,7 @@ This repository contains only the public static website for the SARCTE Developer
 - Desktop/landscape unchanged.
 
 
-Webhook deployment test - 2026-09-04
+## v1.7 — SARCTE UI Baseline v4.1
+- Header rebuilt from clean datacenter background + HTML logo + HTML CTA.
+- Uniform rendering across desktop, tablet landscape/portrait and smartphone.
+- Existing Developer Portal content, theme switch and footer preserved.
