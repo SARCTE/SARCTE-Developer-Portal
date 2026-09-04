@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0b0d12">
+  <meta id="themeColorMeta" name="theme-color" content="#0b0d12">
   <meta name="description" content="SARCTE Developer Portal — progetti, repository, documentazione e risorse tecniche dell'ecosistema SARCTE.">
   <meta name="robots" content="index,follow,max-image-preview:large">
   <link rel="canonical" href="https://github.sarcte.eu/">
@@ -19,6 +19,12 @@
   </header>
 
   <main id="main-content">
+    <div class="theme-toolbar shell" aria-label="Preferenze visualizzazione">
+      <button id="themeToggle" class="theme-toggle" type="button" aria-pressed="false" title="Cambia tema">
+        <span class="theme-toggle-icon" aria-hidden="true">◐</span>
+        <span class="theme-toggle-label">Tema chiaro</span>
+      </button>
+    </div>
     <section class="hero shell">
       <div>
         <span class="eyebrow">SARCTE DEVELOPMENT &amp; OPEN TECHNOLOGY HUB</span>

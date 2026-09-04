@@ -18,3 +18,17 @@ This repository contains only the public static website for the SARCTE Developer
 `main`
 
 © 2026 SARCTE.
+
+
+## v1.2
+
+- Tema scuro come impostazione predefinita.
+- Tema chiaro opzionale con selettore e persistenza via `localStorage`.
+- Header/footer SARCTE v3.9 invariati.
+- Correzione layout card repository: il link non si sovrappone più al testo.
+- Rifiniture responsive per mobile/tablet.
+
+
+## v1.3
+- Logo SARCTE nell'header alzato leggermente tramite rifinitura del crop verticale.
+- Nessuna modifica a footer, contenuti, tema dark/light o layout del portale.

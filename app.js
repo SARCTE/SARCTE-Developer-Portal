@@ -20,3 +20,37 @@ const projectsGrid=document.getElementById('projectsGrid');
 projects.forEach(p=>{const el=document.createElement('article');el.className='card';el.innerHTML=`<div class="card-meta"><span class="tag">${p.status}</span></div><h3>${p.name}</h3><p>${p.text}</p>`;projectsGrid.appendChild(el)});
 const reposGrid=document.getElementById('repositoriesGrid');
 repositories.forEach(r=>{const el=document.createElement('article');el.className='repo-card';el.innerHTML=`<span class="tag">GITHUB</span><h3>${r.name}</h3><p>${r.text}</p><a href="${r.url}">Apri repository ↗</a>`;reposGrid.appendChild(el)});
+
+
+// Theme preference — dark by default, light optional.
+(() => {
+  const storageKey = 'sarcte-developer-theme';
+  const root = document.documentElement;
+  const toggle = document.getElementById('themeToggle');
+  const label = toggle?.querySelector('.theme-toggle-label');
+  const icon = toggle?.querySelector('.theme-toggle-icon');
+  const themeMeta = document.getElementById('themeColorMeta');
+
+  const applyTheme = (theme) => {
+    root.dataset.theme = theme;
+    const isLight = theme === 'light';
+
+    if (toggle) {
+      toggle.setAttribute('aria-pressed', String(isLight));
+      toggle.setAttribute('aria-label', isLight ? 'Attiva tema scuro' : 'Attiva tema chiaro');
+      toggle.title = isLight ? 'Attiva tema scuro' : 'Attiva tema chiaro';
+    }
+    if (label) label.textContent = isLight ? 'Tema scuro' : 'Tema chiaro';
+    if (icon) icon.textContent = isLight ? '☾' : '☀';
+    if (themeMeta) themeMeta.setAttribute('content', isLight ? '#f5f7fa' : '#0b0d12');
+  };
+
+  const saved = localStorage.getItem(storageKey);
+  applyTheme(saved === 'light' ? 'light' : 'dark');
+
+  toggle?.addEventListener('click', () => {
+    const next = root.dataset.theme === 'light' ? 'dark' : 'light';
+    localStorage.setItem(storageKey, next);
+    applyTheme(next);
+  });
+})();
