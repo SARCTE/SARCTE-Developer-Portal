@@ -40,3 +40,9 @@ This repository contains only the public static website for the SARCTE Developer
 - Hero, cards, repository e CTA in singola colonna.
 - Tipografia e spaziature ridimensionate per mobile.
 - Footer e hotspot adattati per il touch.
+
+
+## v1.5 Mobile Header Fix
+- Su smartphone il banner non viene più ritagliato.
+- Logo SARCTE e pulsante `Visita sarcte.it` restano interamente visibili.
+- Il banner mantiene automaticamente le proporzioni originali.
