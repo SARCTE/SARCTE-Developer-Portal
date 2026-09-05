@@ -1395,3 +1395,1178 @@ html[data-theme="light"] .hero-mark img{
   .sarcte-exact-brand img{width:168px;max-width:54vw;max-height:68px}
   .sarcte-exact-cta{min-height:38px;padding:0 8px;font-size:10.5px}
 }
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.0 FINAL
+   Brand is a pixel-exact crop from the approved footer artwork.
+   No regenerated font, no rewritten wordmark, no antialias changes.
+   ============================================================ */
+
+.sarcte-v5-header{
+  position:relative;
+  width:100%;
+  height:176px;
+  overflow:hidden;
+  background:#05070b;
+  isolation:isolate;
+}
+
+.sarcte-v5-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(90deg,rgba(2,4,7,.58) 0%,rgba(2,4,7,.18) 42%,rgba(2,4,7,.04) 100%),
+    url("assets/sarcte_header_bg_exact_footer_v5.jpg") center center / cover no-repeat;
+}
+
+.sarcte-v5-inner{
+  position:relative;
+  z-index:2;
+  width:min(92%,1600px);
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+
+.sarcte-v5-brand{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  text-decoration:none !important;
+}
+
+.sarcte-v5-brand img{
+  display:block;
+  width:380px;
+  max-width:40vw;
+  height:auto;
+  max-height:126px;
+  object-fit:contain;
+  object-position:left center;
+  border-radius:0;
+}
+
+.sarcte-v5-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-height:54px;
+  padding:0 30px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+
+/* Laptop / tablet landscape */
+@media(max-width:1100px){
+  .sarcte-v5-header{height:156px}
+  .sarcte-v5-inner{width:min(94%,1200px);gap:20px}
+  .sarcte-v5-brand img{width:325px;max-width:44vw;max-height:108px}
+  .sarcte-v5-cta{min-height:48px;padding:0 23px;font-size:16px}
+}
+
+/* Tablet portrait */
+@media(max-width:820px){
+  .sarcte-v5-header{height:138px}
+  .sarcte-v5-bg{background-position:57% center}
+  .sarcte-v5-inner{width:calc(100% - 34px);gap:14px}
+  .sarcte-v5-brand img{width:255px;max-width:54vw;max-height:92px}
+  .sarcte-v5-cta{min-height:44px;padding:0 17px;font-size:14px}
+}
+
+/* Smartphone */
+@media(max-width:600px){
+  .sarcte-v5-header{height:116px}
+  .sarcte-v5-bg{background-position:60% center}
+  .sarcte-v5-inner{width:calc(100% - 22px);gap:8px}
+  .sarcte-v5-brand{flex:1 1 auto}
+  .sarcte-v5-brand img{width:190px;max-width:55vw;max-height:76px}
+  .sarcte-v5-cta{min-height:40px;padding:0 10px;font-size:11.5px;border-radius:8px}
+}
+
+/* Narrow smartphone */
+@media(max-width:390px){
+  .sarcte-v5-header{height:108px}
+  .sarcte-v5-inner{width:calc(100% - 16px)}
+  .sarcte-v5-brand img{width:164px;max-width:54vw;max-height:68px}
+  .sarcte-v5-cta{min-height:38px;padding:0 8px;font-size:10.5px}
+}
+
+/* Utility rows below the header */
+@media(max-width:820px){
+  .utility-strip-inner,
+  .subpage-utility{
+    width:calc(100% - 28px) !important;
+    max-width:none !important;
+    margin-inline:auto !important;
+    gap:10px !important;
+    flex-wrap:wrap !important;
+  }
+}
+@media(max-width:520px){
+  .utility-strip-inner,
+  .subpage-utility{
+    display:grid !important;
+    grid-template-columns:1fr 1fr !important;
+    align-items:stretch !important;
+  }
+  .utility-strip-inner > *,
+  .subpage-utility > *{
+    min-width:0 !important;
+    min-height:42px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    text-align:center !important;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.1 — FOOTER BRAND MATCH
+   Brand is an exact pixel crop from the approved footer.
+   The left side of the header fades to the same black backdrop,
+   so the crop blends seamlessly without a visible rectangle.
+   ============================================================ */
+
+.sarcte-v51-header{
+  position:relative;
+  width:100%;
+  height:176px;
+  overflow:hidden;
+  background:#020305;
+  isolation:isolate;
+}
+
+.sarcte-v51-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(90deg,
+      #020305 0%,
+      #020305 24%,
+      rgba(2,3,5,.96) 31%,
+      rgba(2,3,5,.55) 42%,
+      rgba(2,3,5,.12) 60%,
+      rgba(2,3,5,.03) 100%),
+    url("assets/sarcte_header_bg_exact_footer_v5.jpg") center center / cover no-repeat;
+}
+
+.sarcte-v51-inner{
+  position:relative;
+  z-index:2;
+  width:min(92%,1600px);
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+
+.sarcte-v51-brand{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  text-decoration:none !important;
+}
+
+.sarcte-v51-brand img{
+  display:block;
+  width:430px;
+  max-width:43vw;
+  height:auto;
+  max-height:128px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+.sarcte-v51-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-height:54px;
+  padding:0 30px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+
+@media(max-width:1100px){
+  .sarcte-v51-header{height:156px}
+  .sarcte-v51-inner{width:min(94%,1200px);gap:20px}
+  .sarcte-v51-brand img{width:360px;max-width:46vw;max-height:108px}
+  .sarcte-v51-cta{min-height:48px;padding:0 23px;font-size:16px}
+}
+
+@media(max-width:820px){
+  .sarcte-v51-header{height:138px}
+  .sarcte-v51-bg{
+    background:
+      linear-gradient(90deg,#020305 0%,#020305 31%,rgba(2,3,5,.72) 48%,rgba(2,3,5,.08) 100%),
+      url("assets/sarcte_header_bg_exact_footer_v5.jpg") 60% center / cover no-repeat;
+  }
+  .sarcte-v51-inner{width:calc(100% - 34px);gap:14px}
+  .sarcte-v51-brand img{width:280px;max-width:55vw;max-height:94px}
+  .sarcte-v51-cta{min-height:44px;padding:0 17px;font-size:14px}
+}
+
+@media(max-width:600px){
+  .sarcte-v51-header{height:116px}
+  .sarcte-v51-bg{
+    background:
+      linear-gradient(90deg,#020305 0%,#020305 37%,rgba(2,3,5,.75) 55%,rgba(2,3,5,.10) 100%),
+      url("assets/sarcte_header_bg_exact_footer_v5.jpg") 65% center / cover no-repeat;
+  }
+  .sarcte-v51-inner{width:calc(100% - 22px);gap:8px}
+  .sarcte-v51-brand{flex:1 1 auto}
+  .sarcte-v51-brand img{width:205px;max-width:57vw;max-height:78px}
+  .sarcte-v51-cta{min-height:40px;padding:0 10px;font-size:11.5px;border-radius:8px}
+}
+
+@media(max-width:390px){
+  .sarcte-v51-header{height:108px}
+  .sarcte-v51-inner{width:calc(100% - 16px)}
+  .sarcte-v51-brand img{width:178px;max-width:56vw;max-height:70px}
+  .sarcte-v51-cta{min-height:38px;padding:0 8px;font-size:10.5px}
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.2 — EXACT BRAND FIX
+   Complete brand crop from approved footer. No clipped wordmark.
+   ============================================================ */
+.sarcte-v52-header{
+  position:relative;
+  width:100%;
+  height:176px;
+  overflow:hidden;
+  background:#020305;
+  isolation:isolate;
+}
+.sarcte-v52-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(90deg,#020305 0%,#020305 23%,rgba(2,3,5,.88) 34%,rgba(2,3,5,.28) 50%,rgba(2,3,5,.04) 100%),
+    url("assets/sarcte_header_bg_footer_exact_v52.jpg") center center / cover no-repeat;
+}
+.sarcte-v52-inner{
+  position:relative;
+  z-index:2;
+  width:min(92%,1600px);
+  height:100%;
+  margin:0 auto;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+.sarcte-v52-brand{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  text-decoration:none !important;
+}
+.sarcte-v52-brand img{
+  display:block;
+  width:430px;
+  max-width:43vw;
+  height:auto;
+  max-height:126px;
+  object-fit:contain;
+  object-position:left center;
+}
+.sarcte-v52-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-height:54px;
+  padding:0 30px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+@media(max-width:1100px){
+  .sarcte-v52-header{height:156px}
+  .sarcte-v52-inner{width:min(94%,1200px);gap:20px}
+  .sarcte-v52-brand img{width:360px;max-width:46vw;max-height:108px}
+  .sarcte-v52-cta{min-height:48px;padding:0 23px;font-size:16px}
+}
+@media(max-width:820px){
+  .sarcte-v52-header{height:138px}
+  .sarcte-v52-bg{
+    background:
+      linear-gradient(90deg,#020305 0%,#020305 30%,rgba(2,3,5,.72) 48%,rgba(2,3,5,.08) 100%),
+      url("assets/sarcte_header_bg_footer_exact_v52.jpg") 60% center / cover no-repeat;
+  }
+  .sarcte-v52-inner{width:calc(100% - 34px);gap:14px}
+  .sarcte-v52-brand img{width:280px;max-width:55vw;max-height:94px}
+  .sarcte-v52-cta{min-height:44px;padding:0 17px;font-size:14px}
+}
+@media(max-width:600px){
+  .sarcte-v52-header{height:116px}
+  .sarcte-v52-bg{
+    background:
+      linear-gradient(90deg,#020305 0%,#020305 36%,rgba(2,3,5,.74) 55%,rgba(2,3,5,.10) 100%),
+      url("assets/sarcte_header_bg_footer_exact_v52.jpg") 65% center / cover no-repeat;
+  }
+  .sarcte-v52-inner{width:calc(100% - 22px);gap:8px}
+  .sarcte-v52-brand{flex:1 1 auto}
+  .sarcte-v52-brand img{width:205px;max-width:57vw;max-height:78px}
+  .sarcte-v52-cta{min-height:40px;padding:0 10px;font-size:11.5px;border-radius:8px}
+}
+@media(max-width:390px){
+  .sarcte-v52-header{height:108px}
+  .sarcte-v52-inner{width:calc(100% - 16px)}
+  .sarcte-v52-brand img{width:178px;max-width:56vw;max-height:70px}
+  .sarcte-v52-cta{min-height:38px;padding:0 8px;font-size:10.5px}
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.3 — FINAL ALIGN
+   Fine tuning on top of v5.2 exact-footer-brand:
+   - exact footer logo/wordmark preserved
+   - brand slightly higher and visually stronger
+   - CTA stays aligned
+   - responsive behavior preserved
+   ============================================================ */
+
+.sarcte-v52-inner{
+  width:min(94%,1640px) !important;
+}
+
+.sarcte-v52-brand{
+  transform:translate(-4px,-8px);
+}
+
+.sarcte-v52-brand img{
+  width:455px !important;
+  max-width:45vw !important;
+  max-height:132px !important;
+}
+
+.sarcte-v52-cta{
+  transform:translateY(-4px);
+}
+
+@media(max-width:1100px){
+  .sarcte-v52-inner{
+    width:min(95%,1240px) !important;
+  }
+  .sarcte-v52-brand{
+    transform:translate(-2px,-6px);
+  }
+  .sarcte-v52-brand img{
+    width:378px !important;
+    max-width:47vw !important;
+    max-height:112px !important;
+  }
+  .sarcte-v52-cta{
+    transform:translateY(-3px);
+  }
+}
+
+@media(max-width:820px){
+  .sarcte-v52-brand{
+    transform:translate(0,-4px);
+  }
+  .sarcte-v52-brand img{
+    width:292px !important;
+    max-width:56vw !important;
+    max-height:98px !important;
+  }
+  .sarcte-v52-cta{
+    transform:translateY(-2px);
+  }
+}
+
+@media(max-width:600px){
+  .sarcte-v52-brand{
+    transform:translate(0,-2px);
+  }
+  .sarcte-v52-brand img{
+    width:214px !important;
+    max-width:58vw !important;
+    max-height:80px !important;
+  }
+  .sarcte-v52-cta{
+    transform:none;
+  }
+}
+
+@media(max-width:390px){
+  .sarcte-v52-brand img{
+    width:184px !important;
+    max-width:57vw !important;
+    max-height:72px !important;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.4 — VISUAL MATCH
+   Exact footer brand retained; position/scale matched to footer.
+   ============================================================ */
+
+.sarcte-v52-inner{
+  width:100% !important;
+  max-width:none !important;
+  padding-left:64px !important;
+  padding-right:64px !important;
+  box-sizing:border-box !important;
+}
+
+.sarcte-v52-brand{
+  transform:none !important;
+}
+
+.sarcte-v52-brand img{
+  width:350px !important;
+  max-width:36vw !important;
+  max-height:112px !important;
+}
+
+.sarcte-v52-cta{
+  transform:none !important;
+}
+
+/* Tablet landscape */
+@media(max-width:1100px){
+  .sarcte-v52-inner{
+    padding-left:38px !important;
+    padding-right:38px !important;
+  }
+
+  .sarcte-v52-brand img{
+    width:300px !important;
+    max-width:43vw !important;
+    max-height:102px !important;
+  }
+}
+
+/* Tablet portrait */
+@media(max-width:820px){
+  .sarcte-v52-inner{
+    padding-left:24px !important;
+    padding-right:24px !important;
+  }
+
+  .sarcte-v52-brand img{
+    width:245px !important;
+    max-width:51vw !important;
+    max-height:88px !important;
+  }
+}
+
+/* Smartphone */
+@media(max-width:600px){
+  .sarcte-v52-inner{
+    padding-left:14px !important;
+    padding-right:14px !important;
+  }
+
+  .sarcte-v52-brand img{
+    width:185px !important;
+    max-width:54vw !important;
+    max-height:72px !important;
+  }
+}
+
+/* Narrow smartphone */
+@media(max-width:390px){
+  .sarcte-v52-inner{
+    padding-left:10px !important;
+    padding-right:10px !important;
+  }
+
+  .sarcte-v52-brand img{
+    width:158px !important;
+    max-width:53vw !important;
+    max-height:64px !important;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.6 — LOGO UP 0.5 CM
+   Final requested adjustment:
+   brand/logo raised by approx. 0.5 cm (~19px desktop).
+   Footer/content unchanged.
+   ============================================================ */
+
+.sarcte-v52-brand{
+  transform:translateY(-19px) !important;
+}
+
+/* Tablet landscape */
+@media(max-width:1100px){
+  .sarcte-v52-brand{
+    transform:translateY(-16px) !important;
+  }
+}
+
+/* Tablet portrait */
+@media(max-width:820px){
+  .sarcte-v52-brand{
+    transform:translateY(-13px) !important;
+  }
+}
+
+/* Smartphone */
+@media(max-width:600px){
+  .sarcte-v52-brand{
+    transform:translateY(-10px) !important;
+  }
+}
+
+/* Narrow smartphone */
+@media(max-width:390px){
+  .sarcte-v52-brand{
+    transform:translateY(-8px) !important;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.7 — LOGO UP MORE
+   Further vertical adjustment only.
+   index.html unchanged: existing .sarcte-v52-brand markup is reused.
+   ============================================================ */
+
+.sarcte-v52-brand{
+  transform:translateY(-30px) !important;
+}
+
+@media(max-width:1100px){
+  .sarcte-v52-brand{
+    transform:translateY(-24px) !important;
+  }
+}
+
+@media(max-width:820px){
+  .sarcte-v52-brand{
+    transform:translateY(-18px) !important;
+  }
+}
+
+@media(max-width:600px){
+  .sarcte-v52-brand{
+    transform:translateY(-13px) !important;
+  }
+}
+
+@media(max-width:390px){
+  .sarcte-v52-brand{
+    transform:translateY(-10px) !important;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.8 — LOGO UP 80PX
+   Desktop: -80px
+   Tablet landscape: -64px
+   Tablet portrait: -48px
+   Smartphone: -32px
+   Narrow smartphone: -24px
+   ============================================================ */
+
+.sarcte-v52-brand{
+  transform:translateY(-80px) !important;
+}
+
+@media(max-width:1100px){
+  .sarcte-v52-brand{ transform:translateY(-64px) !important; }
+}
+
+@media(max-width:820px){
+  .sarcte-v52-brand{ transform:translateY(-48px) !important; }
+}
+
+@media(max-width:600px){
+  .sarcte-v52-brand{ transform:translateY(-32px) !important; }
+}
+
+@media(max-width:390px){
+  .sarcte-v52-brand{ transform:translateY(-24px) !important; }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v5.9 — CENTER ALIGN
+   Final correction requested:
+   logo/brand lowered and aligned vertically with "Visita sarcte.it".
+   ============================================================ */
+
+.sarcte-v52-brand{
+  transform:translateY(0) !important;
+}
+
+.sarcte-v52-cta{
+  transform:translateY(0) !important;
+}
+
+@media(max-width:1100px){
+  .sarcte-v52-brand{ transform:translateY(0) !important; }
+  .sarcte-v52-cta{ transform:translateY(0) !important; }
+}
+
+@media(max-width:820px){
+  .sarcte-v52-brand{ transform:translateY(0) !important; }
+  .sarcte-v52-cta{ transform:translateY(0) !important; }
+}
+
+@media(max-width:600px){
+  .sarcte-v52-brand{ transform:translateY(0) !important; }
+  .sarcte-v52-cta{ transform:translateY(0) !important; }
+}
+
+@media(max-width:390px){
+  .sarcte-v52-brand{ transform:translateY(0) !important; }
+  .sarcte-v52-cta{ transform:translateY(0) !important; }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v6.0 — DEFINITIVE
+   IMPORTANT:
+   Logo + wordmark are NOT reconstructed and NOT separate images.
+   The header uses the exact upper strip of the approved footer.
+   Therefore the SARCTE mark/wordmark is literally identical.
+   ============================================================ */
+
+.sarcte-v60-header{
+  position:relative;
+  width:100%;
+  height:176px;
+  overflow:hidden;
+  background:#020305 url("assets/sarcte_header_exact_footer_strip_v60.jpg")
+             left top / auto 100% no-repeat;
+  isolation:isolate;
+}
+
+/* Invisible clickable area over the baked-in SARCTE brand */
+.sarcte-v60-brand-hit{
+  position:absolute;
+  z-index:2;
+  left:3.2%;
+  top:18%;
+  width:25%;
+  height:64%;
+  display:block;
+  text-decoration:none;
+}
+
+.sarcte-v60-cta{
+  position:absolute;
+  z-index:3;
+  right:3.4%;
+  top:50%;
+  transform:translateY(-50%);
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  min-height:54px;
+  padding:0 30px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+
+.sarcte-v60-cta:hover{
+  filter:brightness(1.04);
+}
+
+.sarcte-v60-brand-hit:focus-visible,
+.sarcte-v60-cta:focus-visible{
+  outline:3px solid rgba(255,255,255,.9);
+  outline-offset:4px;
+}
+
+/* Tablet landscape */
+@media(max-width:1100px){
+  .sarcte-v60-header{
+    height:156px;
+    background-size:auto 100%;
+  }
+  .sarcte-v60-brand-hit{
+    left:3%;
+    top:18%;
+    width:31%;
+    height:64%;
+  }
+  .sarcte-v60-cta{
+    right:3%;
+    min-height:48px;
+    padding:0 23px;
+    font-size:16px;
+  }
+}
+
+/* Tablet portrait */
+@media(max-width:820px){
+  .sarcte-v60-header{
+    height:138px;
+    background-size:auto 100%;
+  }
+  .sarcte-v60-brand-hit{
+    left:2.4%;
+    top:18%;
+    width:39%;
+    height:64%;
+  }
+  .sarcte-v60-cta{
+    right:2.4%;
+    min-height:44px;
+    padding:0 17px;
+    font-size:14px;
+  }
+}
+
+/* Smartphone */
+@media(max-width:600px){
+  .sarcte-v60-header{
+    height:116px;
+    background-size:auto 100%;
+  }
+  .sarcte-v60-brand-hit{
+    left:2%;
+    top:16%;
+    width:48%;
+    height:68%;
+  }
+  .sarcte-v60-cta{
+    right:2%;
+    min-height:40px;
+    padding:0 10px;
+    border-radius:8px;
+    font-size:11.5px;
+  }
+}
+
+/* Narrow smartphone */
+@media(max-width:390px){
+  .sarcte-v60-header{
+    height:108px;
+  }
+  .sarcte-v60-brand-hit{
+    width:50%;
+  }
+  .sarcte-v60-cta{
+    right:1.5%;
+    min-height:38px;
+    padding:0 8px;
+    font-size:10.5px;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v6.1 — FINAL
+   Exact footer brand as a complete IMG, vertically centered.
+   No background crop can clip the logo or SARCTE wordmark.
+   ============================================================ */
+
+.sarcte-v61-header{
+  position:relative;
+  width:100%;
+  height:176px;
+  overflow:hidden;
+  background:#020305;
+  isolation:isolate;
+}
+
+.sarcte-v61-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(90deg,#020305 0%,rgba(2,3,5,.92) 24%,rgba(2,3,5,.35) 46%,rgba(2,3,5,.04) 100%),
+    url("assets/sarcte_header_bg_footer_v61.jpg") center center / cover no-repeat;
+}
+
+.sarcte-v61-inner{
+  position:relative;
+  z-index:2;
+  width:100%;
+  height:100%;
+  padding:0 64px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:28px;
+}
+
+.sarcte-v61-brand{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  text-decoration:none !important;
+}
+
+.sarcte-v61-brand img{
+  display:block;
+  width:410px;
+  max-width:40vw;
+  height:auto;
+  max-height:116px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+.sarcte-v61-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-height:54px;
+  padding:0 30px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+
+.sarcte-v61-brand:focus-visible,
+.sarcte-v61-cta:focus-visible{
+  outline:3px solid rgba(255,255,255,.9);
+  outline-offset:4px;
+}
+
+/* Tablet landscape */
+@media(max-width:1100px){
+  .sarcte-v61-header{height:156px}
+  .sarcte-v61-inner{padding:0 38px;gap:20px}
+  .sarcte-v61-brand img{
+    width:340px;
+    max-width:44vw;
+    max-height:104px;
+  }
+  .sarcte-v61-cta{
+    min-height:48px;
+    padding:0 23px;
+    font-size:16px;
+  }
+}
+
+/* Tablet portrait */
+@media(max-width:820px){
+  .sarcte-v61-header{height:138px}
+  .sarcte-v61-bg{background-position:60% center}
+  .sarcte-v61-inner{padding:0 24px;gap:14px}
+  .sarcte-v61-brand img{
+    width:265px;
+    max-width:52vw;
+    max-height:90px;
+  }
+  .sarcte-v61-cta{
+    min-height:44px;
+    padding:0 17px;
+    font-size:14px;
+  }
+}
+
+/* Smartphone */
+@media(max-width:600px){
+  .sarcte-v61-header{height:116px}
+  .sarcte-v61-bg{background-position:65% center}
+  .sarcte-v61-inner{padding:0 14px;gap:8px}
+  .sarcte-v61-brand{
+    flex:1 1 auto;
+  }
+  .sarcte-v61-brand img{
+    width:190px;
+    max-width:54vw;
+    max-height:74px;
+  }
+  .sarcte-v61-cta{
+    min-height:40px;
+    padding:0 10px;
+    font-size:11.5px;
+    border-radius:8px;
+  }
+}
+
+/* Narrow smartphone */
+@media(max-width:390px){
+  .sarcte-v61-header{height:108px}
+  .sarcte-v61-inner{padding:0 10px}
+  .sarcte-v61-brand img{
+    width:162px;
+    max-width:53vw;
+    max-height:66px;
+  }
+  .sarcte-v61-cta{
+    min-height:38px;
+    padding:0 8px;
+    font-size:10.5px;
+  }
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v6.2 — TALL HEADER / NO CLIP
+   Taller header and generous brand box to avoid any clipping.
+   ============================================================ */
+
+.sarcte-v62-header{
+  position:relative;
+  width:100%;
+  height:220px;
+  overflow:hidden;
+  background:#020305;
+  isolation:isolate;
+}
+
+.sarcte-v62-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(90deg,#020305 0%,rgba(2,3,5,.94) 22%,rgba(2,3,5,.34) 47%,rgba(2,3,5,.04) 100%),
+    url("assets/sarcte_header_bg_footer_v62_1788596489.jpg") center center / cover no-repeat;
+}
+
+.sarcte-v62-inner{
+  position:relative;
+  z-index:2;
+  width:100%;
+  height:100%;
+  padding:0 64px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:30px;
+}
+
+.sarcte-v62-brand{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  text-decoration:none !important;
+}
+
+.sarcte-v62-brand img{
+  display:block;
+  width:430px;
+  max-width:41vw;
+  height:auto;
+  max-height:150px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+.sarcte-v62-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-height:56px;
+  padding:0 30px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+
+@media(max-width:1100px){
+  .sarcte-v62-header{height:190px}
+  .sarcte-v62-inner{padding:0 38px;gap:20px}
+  .sarcte-v62-brand img{width:360px;max-width:45vw;max-height:126px}
+  .sarcte-v62-cta{min-height:50px;padding:0 23px;font-size:16px}
+}
+
+@media(max-width:820px){
+  .sarcte-v62-header{height:164px}
+  .sarcte-v62-bg{background-position:60% center}
+  .sarcte-v62-inner{padding:0 24px;gap:14px}
+  .sarcte-v62-brand img{width:280px;max-width:53vw;max-height:108px}
+  .sarcte-v62-cta{min-height:46px;padding:0 17px;font-size:14px}
+}
+
+@media(max-width:600px){
+  .sarcte-v62-header{height:138px}
+  .sarcte-v62-bg{background-position:65% center}
+  .sarcte-v62-inner{padding:0 14px;gap:8px}
+  .sarcte-v62-brand{flex:1 1 auto}
+  .sarcte-v62-brand img{width:205px;max-width:55vw;max-height:88px}
+  .sarcte-v62-cta{min-height:40px;padding:0 10px;font-size:11.5px;border-radius:8px}
+}
+
+@media(max-width:390px){
+  .sarcte-v62-header{height:128px}
+  .sarcte-v62-inner{padding:0 10px}
+  .sarcte-v62-brand img{width:172px;max-width:54vw;max-height:76px}
+  .sarcte-v62-cta{min-height:38px;padding:0 8px;font-size:10.5px}
+}
+
+
+
+/* ============================================================
+   SARCTE HEADER v6.3 — FINAL NO CLIP
+   Complete footer-derived brand + taller header.
+   ============================================================ */
+
+.sarcte-v63-header{
+  position:relative;
+  width:100%;
+  height:240px;
+  overflow:hidden;
+  background:#020305;
+  isolation:isolate;
+}
+
+.sarcte-v63-bg{
+  position:absolute;
+  inset:0;
+  z-index:0;
+  background:
+    linear-gradient(90deg,#020305 0%,rgba(2,3,5,.95) 22%,rgba(2,3,5,.34) 47%,rgba(2,3,5,.04) 100%),
+    url("assets/sarcte_header_bg_footer_v63_1788597295.jpg") center center / cover no-repeat;
+}
+
+.sarcte-v63-inner{
+  position:relative;
+  z-index:2;
+  width:100%;
+  height:100%;
+  padding:0 72px;
+  box-sizing:border-box;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:32px;
+}
+
+.sarcte-v63-brand{
+  display:flex;
+  align-items:center;
+  min-width:0;
+  text-decoration:none !important;
+}
+
+.sarcte-v63-brand img{
+  display:block;
+  width:470px;
+  max-width:42vw;
+  height:auto;
+  max-height:168px;
+  object-fit:contain;
+  object-position:left center;
+}
+
+.sarcte-v63-cta{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  flex:0 0 auto;
+  min-height:58px;
+  padding:0 32px;
+  border:1px solid #ef242b;
+  border-radius:9px;
+  background:linear-gradient(180deg,#e31c23,#c9141a);
+  color:#fff !important;
+  text-decoration:none !important;
+  font-size:18px;
+  font-weight:800;
+  line-height:1;
+  white-space:nowrap;
+  box-shadow:0 12px 28px rgba(215,25,32,.25);
+}
+
+@media(max-width:1100px){
+  .sarcte-v63-header{height:205px}
+  .sarcte-v63-inner{padding:0 42px;gap:22px}
+  .sarcte-v63-brand img{width:390px;max-width:46vw;max-height:142px}
+  .sarcte-v63-cta{min-height:50px;padding:0 24px;font-size:16px}
+}
+
+@media(max-width:820px){
+  .sarcte-v63-header{height:176px}
+  .sarcte-v63-bg{background-position:60% center}
+  .sarcte-v63-inner{padding:0 26px;gap:14px}
+  .sarcte-v63-brand img{width:300px;max-width:54vw;max-height:116px}
+  .sarcte-v63-cta{min-height:46px;padding:0 18px;font-size:14px}
+}
+
+@media(max-width:600px){
+  .sarcte-v63-header{height:148px}
+  .sarcte-v63-bg{background-position:65% center}
+  .sarcte-v63-inner{padding:0 14px;gap:8px}
+  .sarcte-v63-brand{flex:1 1 auto}
+  .sarcte-v63-brand img{width:215px;max-width:56vw;max-height:92px}
+  .sarcte-v63-cta{min-height:40px;padding:0 10px;font-size:11.5px;border-radius:8px}
+}
+
+@media(max-width:390px){
+  .sarcte-v63-header{height:136px}
+  .sarcte-v63-inner{padding:0 10px}
+  .sarcte-v63-brand img{width:178px;max-width:55vw;max-height:80px}
+  .sarcte-v63-cta{min-height:38px;padding:0 8px;font-size:10.5px}
+}

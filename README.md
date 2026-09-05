@@ -75,3 +75,27 @@ This repository contains only the public static website for the SARCTE Developer
 ## v2.0 — Header Logo Match
 - Header uses flat horizontal SARCTE artwork aligned to footer logo/wordmark.
 - Existing responsive behavior preserved.
+
+
+## v2.2 — Header v5.0 FINAL
+- Header brand is a pixel-exact crop from the approved footer artwork.
+- Responsive behavior preserved for desktop, tablet and smartphone.
+
+
+## v2.5 — Header v5.3 FINAL ALIGN
+- Exact footer brand preserved.
+- Final position/scale tuning for desktop, tablet and smartphone.
+
+
+## v2.8 — Header v5.6 Logo Up
+- SARCTE brand raised approx. 0.5 cm on desktop.
+- Proportional adjustment preserved on tablet and smartphone.
+
+
+## v3.1 — Header Center Align
+- SARCTE brand lowered and vertically aligned with the institutional CTA.
+
+
+## v3.2 — Definitive Header v6.0
+- Uses exact upper strip of approved footer artwork.
+- Brand is not recreated; therefore logo/wordmark match footer exactly.
